@@ -581,7 +581,7 @@ services:
 
 ## 🛣️ Future Enhancements
 
-### Short Term (Next Release)
+### Short Term
 - [ ] User authentication and role-based access
 - [ ] Support for custom knowledge base documents
 - [ ] Enhanced ticket visualization and analytics
@@ -596,16 +596,6 @@ services:
 - [ ] Real-time ticket ingestion via webhooks
 - [ ] Custom model fine-tuning
 - [ ] Automated response suggestions for agents
-
-## 🤝 Contributing
-
-We welcome contributions! Here's how to get started:
-
-1. **Fork** the repository
-2. Create a **feature branch**: `git checkout -b feature/your-feature-name`
-3. **Commit** your changes: `git commit -m 'Add some feature'`
-4. **Push** to the branch: `git push origin feature/your-feature-name`
-5. Open a **pull request**
 
 ### Development Setup
 
