@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+  customer-copilot:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - COHERE_API_KEY=${COHERE_API_KEY}
+      - USE_COHERE=true
+      - USE_GEMINI=false
+      - CHUNK_SIZE=1000
+      - CHUNK_OVERLAP=200
+      - MAX_RETRIEVAL_DOCS=5
+    volumes:
+      - ./chroma_db:/app/chroma_db
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8501/_stcore/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
