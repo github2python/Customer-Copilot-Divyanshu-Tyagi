@@ -1,6 +1,9 @@
+# SQLite compatibility fix for Streamlit Cloud (must be first)
+import sqlite_fix
+
 import streamlit as st
-import json
 import pandas as pd
+import json
 import plotly.express as px
 import plotly.graph_objects as go
 from ai_classifier import TicketClassifier
